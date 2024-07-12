@@ -1,21 +1,12 @@
-# Bluestock-Fintech-IPO
+Bluestock-Fintech-IPO
 Project Overview
 The Bluestock Fintech IPO Web Page aims to provide a seamless and informative platform for investors interested in Bluestock Fintech's IPO. The platform is built to handle high traffic and provide real-time updates to ensure investors have the most accurate and up-to-date information.
 
 Technologies Used
-
-
 Frontend
-
-
-Framework:Bootstrap 5 (via CDN link)
-
-
-Styling: CSS, SCSS,
-
-
+Framework: Bootstrap 5 (via CDN link)
+Styling: CSS, SCSS
 Technologies: HTML, plain JavaScript
-
 Build Tools
 Package Manager: npm
 Bundler: Webpack
