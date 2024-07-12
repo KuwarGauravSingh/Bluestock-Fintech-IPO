@@ -75,18 +75,28 @@ npm start
 
 
 🌐 Usage
+
+
 To start using the Bluestock Fintech IPO Web Page, follow these steps:
 
+
 Access the application:
+
+
 Open your web browser and navigate to http://localhost:3000 (or the appropriate URL if deployed).
 
 Explore features:
+
+
 Browse through the IPO information, download the prospectus, and follow subscription guidelines.
 
 
 
 🤝 Contributing
+
+
 We welcome contributions to enhance the Bluestock Fintech IPO Web Page. To contribute:
+
 
 Fork the repository.
 Create a new branch:
@@ -105,4 +115,6 @@ Create a pull request.
 
 
 📄 License
+
+
 This project is licensed under the MIT License. See the LICENSE file for details.
