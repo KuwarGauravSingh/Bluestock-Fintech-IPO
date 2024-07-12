@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: lightblue;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-section, .right-section {
+            width: 50%;
+            position: relative;
+        }
+
+        .left-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: slightMotion 2s infinite alternate;
+        }
+
+        @keyframes slightMotion {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(10px); }
+        }
+
+        .right-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        .form-container {
+            background-color: #fffacd; /* Light yellow background */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 1rem;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        .form-container button.login-btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .form-container button.google-btn {
+            background-color: #db4437;
+            color: #fff;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: #007bff; }
+            25% { background-color: #0056b3; }
+            50% { background-color: #007bff; }
+            75% { background-color: #0056b3; }
+            100% { background-color: #007bff; }
+        }
+
+        .form-container button.login-btn {
+            animation: colorChange 5s infinite;
+        }
+
+        .signup-container {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signup-container img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        .signup-container button {
+            background-color: #db4437;
+            color: #fff;
+        }
+
+    </style>
+    <script>
+        function validateLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Replace with actual email and password check
+            if (email === 'user@example.com' && password === 'password123') {
+                window.location.href = 'index.html';
+            } else if (!localStorage.getItem('visited')) {
+                localStorage.setItem('visited', 'true');
+                window.location.href = 'signin.html';
+            } else {
+                alert('Incorrect email or password.');
+            }
+        }
+
+        function googleLogin() {
+            // Placeholder for Google login logic
+            alert('Google login logic here');
+
+            // After Google login, simulate OTP validation
+            const otp = prompt('Enter the OTP sent to your email:');
+            if (otp === '123456') { // Replace with actual OTP validation logic
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid OTP.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="assets/bluestock.png" alt="Login Image">
+        </div>
+        <div class="right-section">
+            <div class="logo">
+                <img src="assets/bluestock logo.png" alt="Bluestock Logo">
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button class="login-btn" onclick="validateLogin()">Login</button>
+                <button class="google-btn" onclick="googleLogin()">Login with Google</button>
+                <div class="signup-container">
+                    <img src="assets/google logo.png" alt="Google Icon">
+                    <button onclick="googleLogin()">Sign up with Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
