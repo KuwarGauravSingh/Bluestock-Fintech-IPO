@@ -7,7 +7,10 @@ Welcome to the Bluestock Fintech IPO Web Page! This platform aims to provide a s
 
 
 🌟 Features
-Detailed IPO Information: Access comprehensive details about Bluestock Fintech's IPO.
+
+Detailed IPO Information: 
+
+Access comprehensive details about Bluestock Fintech's IPO.
 User-Friendly Interface: Enjoy a seamless and intuitive user experience.
 Responsive Design: Experience optimal viewing across various devices and screen sizes.
 Real-Time Updates: Stay informed with the latest updates and information.
@@ -15,19 +18,32 @@ Secure and Scalable: Built with security and scalability in mind to handle high 
 
 
 🛠️ Technologies Used
+
 Frontend
+
+
 Framework: Bootstrap 5 (via CDN link)
+
 Styling: CSS, SCSS
+
 Technologies: HTML, plain JavaScript
+
 Build Tools
+
 Package Manager: npm
+
 Bundler: Webpack
+
 Transpiler: Babel
+
 Version Control
+
 Repository: Git
 
 
+
 🚀 Installation
+
 To set up the project locally, follow these steps:
 
 Clone the repository:
