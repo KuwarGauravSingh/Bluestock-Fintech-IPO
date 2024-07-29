@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-buttons button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-buttons .app-link{
+ 
+  
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.auth-buttons button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.upcoming-ipo h2,
+.faq h2 {
+  margin-bottom: 1rem;
+}
+
+/* .ipo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.ipo-item {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+} */
+
+.ipo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ipo-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.ipo-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.ipo-item h3 {
+  margin-top: 0;
+}
+
+.ipo-item button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.ipo-item button:hover {
+  background-color: #0056b3;
+}
+
+ .drhp {
+  background-color: orangered !important;
+}
+.rhp{
+  color: #ddd;
+  
+}
+
+.faq-item {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.ipo-row {
+  display: flex;
+  justify-content: space-between;
+  width: 88.5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+  
+}
+.ipo-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: white;
+}
